@@ -95,6 +95,11 @@
         text-decoration: none;
     }
 
+    .CardBox a:hover {
+        background-color: #0a98c0;
+        transition: 0.5s;
+    }
+
     .Banner-intro {
         background: url("./trial.jpg") center top no-repeat;
         background-size: auto;
@@ -121,6 +126,9 @@
     }
 
 
+
+
+
     .one-whole {
         margin-top: 0;
     }
@@ -140,6 +148,7 @@
         background-color: rgba(255, 255, 255, 0.9);
         left: 0;
         right: 0;
+
     }
 
     .logo {
@@ -147,6 +156,18 @@
         color: black;
         left: 0;
         right: 0;
+    }
+
+    @media (min-width: 626px) {
+        .hoverImages {
+            -webkit-transition: margin 0.5s ease-out;
+            -moz-transition: margin 0.5s ease-out;
+            -o-transition: margin 0.5s ease-out;
+        }
+
+        .hoverImages:hover {
+            margin-top: 5px;
+        }
     }
 
     @media (max-width: 625px) {
@@ -183,7 +204,6 @@
 
 
 
-
     }
 </style>
 
@@ -192,7 +212,7 @@
     <div class="Banner-intro Banner ">
         <h1 class="logo">Explify Logo</h1>
         <div class="Container">
-            <div class="CardBox">
+            <div class="CardBox hoverImages">
                 <h2>Student</h2>
                 <img src="stu.png" class="org" alt="">
                 <p>
@@ -201,7 +221,7 @@
                 <a href="#">Get
                     Hired</a>
             </div>
-            <div class="CardBox">
+            <div class="CardBox hoverImages">
                 <h2>Organizations</h2>
                 <img src="org.png" class="org" alt="">
                 <p>
