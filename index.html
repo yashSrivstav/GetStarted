@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Started</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 </head>
 <style>
     body {
@@ -20,7 +19,7 @@
         padding: 0;
     }
 
-    .headline-cta-section p {
+    .CardBox p {
 
         font-size: 17px;
         margin-bottom: 25px;
@@ -28,7 +27,7 @@
 
     }
 
-    .headline-cta-section {
+    .CardBox {
 
         color: #626262;
 
@@ -41,7 +40,7 @@
 
     }
 
-    .headline-ctas {
+    .Container {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -56,7 +55,7 @@
 
     }
 
-    .headline-cta-section {
+    .CardBox {
         background: rgba(255, 255, 255, 0.9);
         border-radius: 12px;
         color: #626262;
@@ -68,7 +67,7 @@
         padding: 35px 25px;
     }
 
-    .headline-cta-section h2 {
+    .CardBox h2 {
         font-size: 30px;
         font-weight: 300;
         text-align: center;
@@ -76,20 +75,14 @@
         margin-bottom: 22px;
     }
 
-    .headline-cta-section img.hero-icon {
-        height: auto;
-        width: 40px;
-        margin: 5px auto;
-    }
-
-    .headline-cta-section p {
+    .CardBox p {
         font-size: 17px;
         text-align: center;
         margin-bottom: 25px;
         color: #626262;
     }
 
-    .headline-cta-section a {
+    .CardBox a {
         background-color: #1bb1dc;
         color: #fff;
         display: inline-block;
@@ -97,8 +90,6 @@
         font-size: 16px;
         font-weight: 600;
         margin: auto;
-        /* margin-top: auto;
-        margin-bottom: auto; */
         min-width: 150px;
         border-radius: 8px;
         padding: 15px;
@@ -108,22 +99,17 @@
         text-decoration: none;
     }
 
-    .section-photo-intro {
+    .Banner-intro {
         background: url("https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") center top no-repeat;
         background-size: auto;
         background-size: cover;
     }
 
-    .section-photo {
+    .Banner {
         top: 0;
     }
 
-    /* 
-    .section-photo-intro {
-        position: absolute;
-    } */
-
-    .section-photo {
+    .Banner {
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -138,38 +124,9 @@
         width: 100%;
     }
 
-    .section-vertical-align {
-        /* top: 47%; */
-        margin-top: 0 !important;
-        top: 0;
-    }
-
-    .section-vertical-align {
-        position: relative;
-        /* top: 50%; */
-    }
-
-    .section-centered {
-        /* -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box; */
-        box-sizing: border-box;
-        margin: 0 auto;
-        /* margin-top: 0px; */
-        max-width: 1080px;
-        padding-left: 20px;
-        padding-right: 20px;
-        width: 100%;
-    }
 
     .one-whole {
         margin-top: 0;
-    }
-
-    .section-centered::after,
-    .header-item::after,
-    .tabs-list::after {
-        clear: both;
-        content: "";
     }
 
     .org {
@@ -180,11 +137,10 @@
     }
 
     @media (max-width: 625px) {
-        .headline-ctas {
+        .Container {
             display: inline-block;
             justify-content: center;
             align-items: center;
-
             position: absolute;
             bottom: 0px;
             right: 0px;
@@ -193,11 +149,11 @@
 
         }
 
-        .headline-cta-section {
+        .CardBox {
             min-width: 170px;
         }
 
-        .section-photo {
+        .Banner {
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -217,18 +173,18 @@
 
 <body>
 
-    <div class="section-photo-intro section-photo ">
-        <div class="headline-ctas">
-            <div class="headline-cta-section">
+    <div class="Banner-intro Banner ">
+        <div class="Container">
+            <div class="CardBox">
                 <h2>Student</h2>
                 <img src="stu.png" class="org" alt="">
                 <p>
                     Get yourself hired from Organizations in your own field of expertise.
                 </p>
-                <a class="non-mobile-device-is-hidden mobile-download js-mobile-download" href="#">Get
+                <a href="#">Get
                     Hired</a>
             </div>
-            <div class="headline-cta-section">
+            <div class="CardBox">
                 <h2>Organizations</h2>
                 <img src="org.png" class="org" alt="">
                 <p>
