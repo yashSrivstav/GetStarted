@@ -44,15 +44,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        /* margin-top: 200px; */
-        /* margin: auto; */
         position: absolute;
         bottom: 0px;
         right: 0px;
         left: 0px;
         top: 0px;
-        /* margin-left: 238px; */
-
     }
 
     .CardBox {
@@ -100,7 +96,7 @@
     }
 
     .Banner-intro {
-        background: url("./image.jpg") center top no-repeat;
+        background: url("./trial.jpg") center top no-repeat;
         background-size: auto;
         background-size: cover;
     }
@@ -136,16 +132,33 @@
         margin: 5px auto;
     }
 
+    .footer {
+        color: black;
+        position: absolute;
+        top: 1;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        left: 0;
+        right: 0;
+    }
+
+    .logo {
+        position: absolute;
+        color: black;
+        left: 0;
+        right: 0;
+    }
+
     @media (max-width: 625px) {
         .Container {
-            display: inline-block;
+            display: block;
             justify-content: center;
             align-items: center;
             position: absolute;
             bottom: 0px;
             right: 0px;
             left: 0px;
-            top: 0px;
+            top: 80px;
 
         }
 
@@ -160,7 +173,7 @@
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
-            height: 135vh;
+            height: 140vh;
             overflow: visible;
             padding: 0;
             position: relative;
@@ -168,12 +181,16 @@
             width: 100%;
         }
 
+
+
+
     }
 </style>
 
 <body>
 
     <div class="Banner-intro Banner ">
+        <h1 class="logo">Explify Logo</h1>
         <div class="Container">
             <div class="CardBox">
                 <h2>Student</h2>
@@ -192,6 +209,9 @@
                 </p>
                 <a href="#">Start Hiring</a>
             </div>
+        </div>
+        <div class="footer">
+            <p>© Copyright Explify. All Rights Reserved</p>
         </div>
     </div>
 
