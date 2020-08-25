@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<style>
+    body {
+        color: #7d7d7d;
+        font: 400 16px/1.667 "Open Sans", sans-serif;
+        font-size: 16px;
+        font-size: 16px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .headline-cta-section p {
+
+        font-size: 17px;
+        margin-bottom: 25px;
+        color: #626262;
+
+    }
+
+    .headline-cta-section {
+
+        color: #626262;
+
+    }
+
+    .section-intro-fullscreen {
+
+        color: #fff;
+        text-align: center;
+
+    }
+
+    .headline-ctas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 200px; */
+        /* margin: auto; */
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        top: 0px;
+        /* margin-left: 238px; */
+
+    }
+
+    .headline-cta-section {
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 12px;
+        color: #626262;
+        display: flex;
+        flex-basis: 45%;
+        flex-direction: column;
+        margin: 20px 50px;
+        max-width: 388px;
+        padding: 35px 25px;
+    }
+
+    .headline-cta-section h2 {
+        font-size: 30px;
+        font-weight: 300;
+        text-align: center;
+        line-height: 28px;
+        margin-bottom: 22px;
+    }
+
+    .headline-cta-section img.hero-icon {
+        height: auto;
+        width: 40px;
+        margin: 5px auto;
+    }
+
+    .headline-cta-section p {
+        font-size: 17px;
+        text-align: center;
+        margin-bottom: 25px;
+        color: #626262;
+    }
+
+    .headline-cta-section a {
+        background-color: #4386fc;
+        color: #fff;
+        display: inline-block;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        margin: auto;
+        /* margin-top: auto;
+        margin-bottom: auto; */
+        min-width: 150px;
+        border-radius: 8px;
+        padding: 15px;
+        margin-top: auto;
+        justify-self: end;
+        margin-bottom: 0;
+        text-decoration: none;
+    }
+
+    .section-photo-intro {
+        background: url("./image.jpg") center top no-repeat;
+        background-size: auto;
+        background-size: cover;
+    }
+
+    .section-photo {
+        top: 0;
+    }
+
+    /* 
+    .section-photo-intro {
+        position: absolute;
+    } */
+
+    .section-photo {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        height: 100vh;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+
+    .section-vertical-align {
+        /* top: 47%; */
+        margin-top: 0 !important;
+        top: 0;
+    }
+
+    .section-vertical-align {
+        position: relative;
+        /* top: 50%; */
+    }
+
+    .section-centered {
+        /* -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; */
+        box-sizing: border-box;
+        margin: 0 auto;
+        /* margin-top: 0px; */
+        max-width: 1080px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+    }
+
+    .one-whole {
+        margin-top: 0;
+    }
+
+    .section-centered::after,
+    .header-item::after,
+    .tabs-list::after {
+        clear: both;
+        content: "";
+    }
+
+    .org {
+        color: #4386fc;
+        height: auto;
+        width: 60px;
+        margin: 5px auto;
+    }
+
+    @media (max-width: 625px) {
+        .headline-ctas {
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            left: 0px;
+            top: 0px;
+
+        }
+
+        .headline-cta-section {
+            min-width: 170px;
+        }
+
+        .section-photo {
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            height: 135vh;
+            overflow: visible;
+            padding: 0;
+            position: relative;
+            text-align: center;
+            width: 100%;
+        }
+
+    }
+</style>
+
+<body>
+
+    <div class="section-photo-intro section-photo ">
+        <div class="headline-ctas">
+            <div class="headline-cta-section">
+                <h2>Student</h2>
+                <img src="stu.png" class="org" alt="">
+                <p>
+                    Get yourself hired from Organizations in your own field of expertise.
+                </p>
+                <a class="non-mobile-device-is-hidden mobile-download js-mobile-download" href="#">Get
+                    Hired</a>
+            </div>
+            <div class="headline-cta-section">
+                <h2>Organizations</h2>
+                <img src="org.png" class="org" alt="">
+                <p>
+                    Hire students according to your own need and get in touch with skilled students.
+                </p>
+                <a href="#">Start Hiring</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
